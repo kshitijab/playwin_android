@@ -1,0 +1,33 @@
+{
+    "name": "PlayWin Lotto",
+    "version": "1.0.0",
+    "description": "Playwin Lotto",
+    "author": "Pan India Team",
+    "license": "Apache-2.0.0",
+    "keywords": [
+        "ecosystem:phonegap",
+        "ecosystem:cordova",
+        "cordova:template",
+        "phonegap:template"
+    ],
+    "dependencies": {
+        "cheerio": "^0.22.0",
+        "cordova-plugin-compat": "^1.0.0",
+        "cordova-plugin-dialogs": "^1.3.3",
+        "cordova-plugin-geolocation": "^2.4.3",
+        "cordova-plugin-whitelist": "1",
+        "elementtree": "^0.1.7",
+        "glob": "^7.1.1",
+        "ncp": "^2.0.0",
+        "nopt": "^4.0.1",
+        "plist": "^2.0.1",
+        "q": "^1.5.0"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-dialogs": {}
+        }
+    }
+}
