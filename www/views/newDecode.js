@@ -1141,6 +1141,10 @@ AppNamespace[_0x495a[214]] = function (_0x6c34xd) {
             $(_0x495a[337] + 1)[_0x495a[298]](_0x495a[269]);
         },
         play: function () {
+            viewPlayGameModel[_0x495a[62]](true);
+            setTimeout(function () {
+                viewPlayGameModel[_0x495a[62]](false);
+            }, 500);
             Playwin[_0x495a[171]][_0x495a[342]](Playwin[_0x495a[171]][_0x495a[250]]);
         },
         isShowNoOfResultList: ko[_0x495a[9]](false),
