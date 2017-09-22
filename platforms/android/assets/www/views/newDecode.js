@@ -29,7 +29,7 @@ AppNamespace[_0x495a[0]] = function(_0x6c34x1) {
             this[_0x495a[13]](false);
         },
         navigate: function(_0x6c34x3, _0x6c34x4) {
-          // navigation from dashboard
+            // navigation from dashboard
             if (_0x6c34x3 == _0x495a[17]) {
                 AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[18]);
             } else {
@@ -37,12 +37,12 @@ AppNamespace[_0x495a[0]] = function(_0x6c34x1) {
                     AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[22]);
                 } else {
                     if (_0x6c34x3 == _0x495a[23]) {
-                        if(navigator.connection.type==0){
-                          DevExpress.ui.dialog.alert("No Internet connection.","Error!");
-                        }else if(navigator.connection.type=='none'){
-                          DevExpress.ui.dialog.alert('No Internet connection.',"Error!");
-                        }else{
-                          AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[24]);
+                        if (navigator.connection.type == 0) {
+                            DevExpress.ui.dialog.alert("No Internet connection.", "Error!");
+                        } else if (navigator.connection.type == 'none') {
+                            DevExpress.ui.dialog.alert('No Internet connection.', "Error!");
+                        } else {
+                            AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[24]);
                         }
                     } else {
                         if (_0x6c34x3 == _0x495a[25]) {
@@ -109,9 +109,9 @@ ko[_0x495a[34]][_0x495a[43]] = function(_0x6c34x6, _0x6c34x5) {
         read: _0x6c34x6,
         write: function(_0x6c34x8) {
             var _0x6c34x3 = _0x6c34x6(),
-            _0x6c34x4 = Math[_0x495a[44]](10, _0x6c34x5),
-            _0x6c34x9 = isNaN(_0x6c34x8) ? 0 : parseFloat(+_0x6c34x8),
-            _0x6c34x2 = Math[_0x495a[45]](_0x6c34x9 * _0x6c34x4) / _0x6c34x4;
+                _0x6c34x4 = Math[_0x495a[44]](10, _0x6c34x5),
+                _0x6c34x9 = isNaN(_0x6c34x8) ? 0 : parseFloat(+_0x6c34x8),
+                _0x6c34x2 = Math[_0x495a[45]](_0x6c34x9 * _0x6c34x4) / _0x6c34x4;
             if (_0x6c34x2 !== _0x6c34x3) {
                 _0x6c34x6(_0x6c34x2);
             } else {
@@ -150,6 +150,7 @@ function validateEmail(_0x6c34x1) {
     var _0x6c34x2 = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return _0x6c34x2[_0x495a[49]](_0x6c34x1);
 };
+
 function getAge(dateString) {
     var today = new Date();
     var birthDate = new Date(dateString);
@@ -176,19 +177,19 @@ AppNamespace[_0x495a[50]] = function() {
             if (this[_0x495a[54]][_0x495a[35]]()) {
                 DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[55], _0x495a[56]);
                 return false;
-            } else if(document.getElementById('dob').value == ""){
+            } else if (document.getElementById('dob').value == "") {
                 DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]]("Please Enter your date of birth", _0x495a[56]);
                 return false;
-            } else if(getAge(document.getElementById('dob').value) < 18){
+            } else if (getAge(document.getElementById('dob').value) < 18) {
                 DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]]("Sorry you are too young to register for the game", _0x495a[56]);
                 return false;
-            } else if(!document.getElementById('tc').checked){
+            } else if (!document.getElementById('tc').checked) {
                 DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]]("Please agree on terms & conditions. ", _0x495a[56]);
                 return false;
-            } else if(!document.getElementById('above').checked){
+            } else if (!document.getElementById('above').checked) {
                 DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]]("Please verify you are above 18 to play.", _0x495a[56]);
                 return false;
-            } else if(!document.getElementById('state').checked){
+            } else if (!document.getElementById('state').checked) {
                 DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]]("Sorry Gaming outside maharahstra & goa is not allowed.", _0x495a[56]);
                 return false;
             } else {
@@ -204,7 +205,7 @@ AppNamespace[_0x495a[50]] = function() {
             };
             _0x6c34x4[_0x495a[62]](true);
             // &dob=document.getElementById('dob').value&address=document.getElementById('address').value&newslettersubscription=document.getElementById('news').checked
-            var _0x6c34xb = _0x495a[63] + this[_0x495a[54]]() + _0x495a[64] + this[_0x495a[39]]() + _0x495a[65] + this[_0x495a[48]]()+"&dob="+document.getElementById('dob').value+"&address="+document.getElementById('address').value+"&newslettersubscription="+document.getElementById('news').checked;
+            var _0x6c34xb = _0x495a[63] + this[_0x495a[54]]() + _0x495a[64] + this[_0x495a[39]]() + _0x495a[65] + this[_0x495a[48]]() + "&dob=" + document.getElementById('dob').value + "&address=" + document.getElementById('address').value + "&newslettersubscription=" + document.getElementById('news').checked;
             if (typeof device != _0x495a[66]) {
                 _0x6c34xb = _0x6c34xb + _0x495a[67] + device[_0x495a[54]] + _0x495a[68] + device[_0x495a[69]] + _0x495a[70] + device[_0x495a[71]] + _0x495a[72] + device[_0x495a[73]];
             };
@@ -241,12 +242,12 @@ AppNamespace[_0x495a[50]] = function() {
                 };
             })[_0x495a[75]](function() {
                 _0x6c34x4[_0x495a[62]](false);
-                if(navigator.connection.type==0){
-                  DevExpress.ui.dialog.alert("No Internet connection.","Error!");
-                }else if(navigator.connection.type=='none'){
-                  DevExpress.ui.dialog.alert('No Internet connection.',"Error!");
-                }else{
-                  DevExpress.ui.dialog.alert('Registration failed.',"Error!");
+                if (navigator.connection.type == 0) {
+                    DevExpress.ui.dialog.alert("No Internet connection.", "Error!");
+                } else if (navigator.connection.type == 'none') {
+                    DevExpress.ui.dialog.alert('No Internet connection.', "Error!");
+                } else {
+                    DevExpress.ui.dialog.alert('Registration failed.', "Error!");
                 }
             });
         }
@@ -296,7 +297,7 @@ AppNamespace[_0x495a[99]] = function(_0x6c34x2) {
                     //alert("we have to set code for mobile here"+Playwin[_0x495a[89]][_0x495a[88]][_0x495a[39]]);
                     window[_0x495a[8]][_0x495a[87]]('mobileNumber', Playwin[_0x495a[89]][_0x495a[88]][_0x495a[39]]);
                     window[_0x495a[8]][_0x495a[87]]('playername', Playwin[_0x495a[89]][_0x495a[88]][_0x495a[54]]);
-                    window.plugins.OneSignal.sendTags({cardNo: "", mobile: Playwin[_0x495a[89]][_0x495a[88]][_0x495a[39]],name:Playwin[_0x495a[89]][_0x495a[88]][_0x495a[54]]});
+                    window.plugins.OneSignal.sendTags({ cardNo: "", mobile: Playwin[_0x495a[89]][_0x495a[88]][_0x495a[39]], name: Playwin[_0x495a[89]][_0x495a[88]][_0x495a[54]] });
                     //console.log("we have to set code for mobile here");
                     window[_0x495a[8]][_0x495a[87]](_0x495a[84], _0x495a[40]);
                     Playwin[_0x495a[89]][_0x495a[106]](_0x6c34x1);
@@ -466,54 +467,49 @@ AppNamespace[_0x495a[108]] = function(_0x6c34xd) {
             return _0x6c34x1a;
         },
         playGameBtn: function(_0x6c34x11) {
-        var onSuccess = function(position) {
-            console.log(position);
-            latitude =  position.coords.latitude; // '23.022505';
-            longitude =  position.coords.longitude; // '72.5713621';
-            $.ajax({
-                type: 'GET',
-                url: 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&sensor=true',
-                success: function(result)
-                {
-                    var add = eval(result);
-                    var address = add.results[0].formatted_address;
-                    var isPlayState = address.toLowerCase();
-                    console.log(isPlayState+', maha = '+isPlayState.indexOf('maharashtra')+', sikkim = '+isPlayState.indexOf('sikkim'));
-                    if(isPlayState.indexOf('maharashtra') == -1 && isPlayState.indexOf('sikkim') == -1 && isPlayState.indexOf('goa') == -1)
-                    {
-                         DevExpress.ui.dialog.alert("You cannot play outside Sikkim or Maharashtra!","Error!");
-                    }
-                    else
-                    {
-                        /*if(navigator.connection.type==0){
-                            DevExpress.ui.dialog.alert("No Internet connection.","Error!");
-                        }else if(navigator.connection.type=='none'){
-                            DevExpress.ui.dialog.alert('No Internet connection.',"Error!");
-                        }else{*/
+            var onSuccess = function(position) {
+                console.log(position);
+                latitude = position.coords.latitude; // '23.022505';
+                longitude = position.coords.longitude; // '72.5713621';
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://maps.googleapis.com/maps/api/geocode/json?latlng=' + latitude + ',' + longitude + '&sensor=true',
+                    success: function(result) {
+                        var add = eval(result);
+                        var address = add.results[0].formatted_address;
+                        var isPlayState = address.toLowerCase();
+                        console.log(isPlayState + ', maha = ' + isPlayState.indexOf('maharashtra') + ', sikkim = ' + isPlayState.indexOf('sikkim'));
+                        if (isPlayState.indexOf('maharashtra') == -1 && isPlayState.indexOf('sikkim') == -1 && isPlayState.indexOf('goa') == -1) {
+                            DevExpress.ui.dialog.alert("You cannot play outside Sikkim or Maharashtra!", "Error!");
+                        } else {
+                            /*if(navigator.connection.type==0){
+                                DevExpress.ui.dialog.alert("No Internet connection.","Error!");
+                            }else if(navigator.connection.type=='none'){
+                                DevExpress.ui.dialog.alert('No Internet connection.',"Error!");
+                            }else{*/
                             AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[163] + _0x6c34x11[_0x495a[142]]);
-                        //}
+                            //}
+                        }
+                    },
+                    error: function(e) {
+                        console.log(e.responseText);
                     }
-                },
-                error: function(e)
-                {
-                    console.log(e.responseText);
-                }
-            });
-        };
+                });
+            };
 
-        // onError Callback receives a PositionError object
-        //
-        function onError(error) {
-            console.log('code: '    + error.code    + '\n' +
-                'message: ' + error.message + '\n');
-            DevExpress.ui.dialog.alert("Please enable location service to play!","Error!");
-        }
-        function alertDismissed()
-        {
-            
-        }
-        navigator.geolocation.getCurrentPosition(onSuccess, onError, {timeout: 10000, enableHighAccuracy: true});
-          
+            // onError Callback receives a PositionError object
+            //
+            function onError(error) {
+                console.log('code: ' + error.code + '\n' +
+                    'message: ' + error.message + '\n');
+                DevExpress.ui.dialog.alert("Please enable location service to play!", "Error!");
+            }
+
+            function alertDismissed() {
+
+            }
+            navigator.geolocation.getCurrentPosition(onSuccess, onError, { timeout: 10000, enableHighAccuracy: true });
+
         },
         gameInfoBtn: function(_0x6c34x11) {
             AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[164] + _0x6c34x11[_0x495a[142]]);
@@ -643,31 +639,31 @@ AppNamespace[_0x495a[108]] = function(_0x6c34xd) {
                 initalizeTimers((new Date()[_0x495a[155]]() / 1000));
             });
 
-            function initalizeTimers(time){
+            function initalizeTimers(time) {
                 //console.log(time);
                 $(_0x495a[138])[_0x495a[152]](function() {
-                var _0x6c34x29 = this[_0x495a[142]][_0x495a[146]](_0x495a[193]); // this.id.slpit(_)
-                if (_0x6c34x29[0] == _0x495a[194]) { // timer
-                    var _0x6c34x22 = _0x495a[12]; // blank value
-                    var _0x6c34x25;
-                    $[_0x495a[152]](_0x6c34x28, function(_0x6c34x1b, _0x6c34x1c) { //each loop
-                        if (_0x6c34x1c[_0x495a[142]] == _0x6c34x29[1]) {            // this.id ==
-                            _0x6c34x22 = _0x6c34x1c[_0x495a[144]][_0x495a[175]];    // last result . nextdrawdateNF
-                            _0x6c34x25 = _0x6c34x1c[_0x495a[142]];                  // this.id
+                    var _0x6c34x29 = this[_0x495a[142]][_0x495a[146]](_0x495a[193]); // this.id.slpit(_)
+                    if (_0x6c34x29[0] == _0x495a[194]) { // timer
+                        var _0x6c34x22 = _0x495a[12]; // blank value
+                        var _0x6c34x25;
+                        $[_0x495a[152]](_0x6c34x28, function(_0x6c34x1b, _0x6c34x1c) { //each loop
+                            if (_0x6c34x1c[_0x495a[142]] == _0x6c34x29[1]) { // this.id ==
+                                _0x6c34x22 = _0x6c34x1c[_0x495a[144]][_0x495a[175]]; // last result . nextdrawdateNF
+                                _0x6c34x25 = _0x6c34x1c[_0x495a[142]]; // this.id
+                            };
+                        });
+                        if (_0x6c34x22 == undefined || _0x6c34x22 == _0x495a[12]) { // blank value
+                            return;
                         };
-                    });
-                    if (_0x6c34x22 == undefined || _0x6c34x22 == _0x495a[12]) {     // blank value
-                        return;
+                        var _0x6c34x2a = _0x6c34x22[_0x495a[146]](_0x495a[40]); // split blank
+                        var _0x6c34x2b = _0x6c34x2a[0][_0x495a[146]](_0x495a[195]); // split /
+                        var _0x6c34x2c = _0x6c34x2a[1][_0x495a[146]](_0x495a[196]); // split :
+                        var _0x6c34x2d = new Date(_0x6c34x2b[2], _0x6c34x2b[1] - 1, _0x6c34x2b[0], _0x6c34x2c[0], _0x6c34x2c[1], _0x6c34x2c[2], 0);
+                        var _0x6c34x2e = parseInt((_0x6c34x2d[_0x495a[155]]() / 1000) - (time)); //(new Date(time)));
+                        Playwin[_0x495a[89]][_0x495a[191]][_0x495a[198]](_0x495a[197] + _0x6c34x25, _0x6c34x2e);
                     };
-                    var _0x6c34x2a = _0x6c34x22[_0x495a[146]](_0x495a[40]);    // split blank
-                    var _0x6c34x2b = _0x6c34x2a[0][_0x495a[146]](_0x495a[195]);  // split /
-                    var _0x6c34x2c = _0x6c34x2a[1][_0x495a[146]](_0x495a[196]);   // split :
-                    var _0x6c34x2d = new Date(_0x6c34x2b[2], _0x6c34x2b[1] - 1, _0x6c34x2b[0], _0x6c34x2c[0], _0x6c34x2c[1], _0x6c34x2c[2], 0);
-                    var _0x6c34x2e = parseInt((_0x6c34x2d[_0x495a[155]]() / 1000) - (time));//(new Date(time)));
-                    Playwin[_0x495a[89]][_0x495a[191]][_0x495a[198]](_0x495a[197] + _0x6c34x25, _0x6c34x2e);
-                };
-            });
-            window[_0x495a[32]](_0x495a[199], 1000);
+                });
+                window[_0x495a[32]](_0x495a[199], 1000);
             }
         },
         getListHt: function() {
@@ -951,7 +947,7 @@ AppNamespace[_0x495a[214]] = function(_0x6c34xd) {
         },
         drawChange: function() {
 
-            var _0x6c34x21 = $(_0x495a[229])[_0x495a[228]]();//$(_0x495a[229]).value();//[_0x495a[228]]();
+            var _0x6c34x21 = $(_0x495a[229])[_0x495a[228]](); //$(_0x495a[229]).value();//[_0x495a[228]]();
             var _0x6c34x29 = _0x6c34x21[_0x495a[146]](_0x495a[193], 3);
             var _0x6c34x33 = _0x6c34x29[2];
             var _0x6c34x43 = _0x6c34x29[1];
@@ -1041,342 +1037,342 @@ AppNamespace[_0x495a[214]] = function(_0x6c34xd) {
             } else {
                 for (var _0x6c34x1b = 0; _0x6c34x1b < _0x6c34x47[_0x495a[42]]; _0x6c34x1b++) {};
             };
-        var _0x6c34x4a = [];
-        $(_0x495a[304])[_0x495a[269]]();
-        var _0x6c34x20 = eval(_0x495a[174] + _0x6c34x12);
-        var _0x6c34x45 = _0x495a[294] + _0x6c34x25 + _0x495a[295];
-        _0x6c34x45 = _0x6c34x45 + _0x495a[305] + _0x6c34x25 + _0x495a[306] + ($(_0x495a[307])[_0x495a[42]] + 1) + _0x495a[308];
-        if (_0x6c34x12 == 9) {
-            $[_0x495a[309]](_0x6c34x4a, [$(_0x495a[236])[_0x495a[228]]()]);
-            $[_0x495a[309]](_0x6c34x4a, _0x6c34x47);
-            $[_0x495a[309]](_0x6c34x4a, [$(_0x495a[256])[_0x495a[228]]()]);
-            $("#kenoStep2").html("Select Panel "+(parseInt(_0x6c34x25) + 1));
-            _0x6c34x45 = _0x6c34x45 + _0x495a[310] + $(_0x495a[236])[_0x495a[228]]() + _0x495a[308];
-            _0x6c34x45 = _0x6c34x45 + _0x495a[311] + _0x6c34x25 + _0x495a[312] + ($[_0x495a[314]](_0x6c34x47, function(_0x6c34x41) {
-                return _0x6c34x41 == _0x495a[313] ? _0x495a[279] : _0x6c34x41;
-            })) + _0x495a[315] + _0x6c34x25 + _0x495a[316] + _0x6c34x4a + _0x495a[317];
-            _0x6c34x45 = _0x6c34x45 + _0x495a[318] + _0x6c34x25 + _0x495a[319] + $(_0x495a[256])[_0x495a[228]]() + _0x495a[295] + ($(_0x495a[256])[_0x495a[228]]() * 13) + _0x495a[308];
-            $("#amt_option").val(1);
-            $("#amt_option_caption").val(13);
-        } else {
-            _0x6c34x45 = _0x6c34x45 + _0x495a[311] + _0x6c34x25 + _0x495a[312] + ($[_0x495a[314]](_0x6c34x47, function(_0x6c34x41) {
-                return _0x6c34x41 == _0x495a[313] ? _0x495a[279] : _0x6c34x41;
-            })) + _0x495a[315] + _0x6c34x25 + _0x495a[316];
-            _0x6c34x45 = _0x6c34x45 + _0x6c34x47 + _0x495a[317];
-            if (_0x6c34x12 == 11) {
-                _0x6c34x45 = _0x6c34x45 + _0x495a[318] + _0x6c34x25 + _0x495a[320];
+            var _0x6c34x4a = [];
+            $(_0x495a[304])[_0x495a[269]]();
+            var _0x6c34x20 = eval(_0x495a[174] + _0x6c34x12);
+            var _0x6c34x45 = _0x495a[294] + _0x6c34x25 + _0x495a[295];
+            _0x6c34x45 = _0x6c34x45 + _0x495a[305] + _0x6c34x25 + _0x495a[306] + ($(_0x495a[307])[_0x495a[42]] + 1) + _0x495a[308];
+            if (_0x6c34x12 == 9) {
+                $[_0x495a[309]](_0x6c34x4a, [$(_0x495a[236])[_0x495a[228]]()]);
+                $[_0x495a[309]](_0x6c34x4a, _0x6c34x47);
+                $[_0x495a[309]](_0x6c34x4a, [$(_0x495a[256])[_0x495a[228]]()]);
+                $("#kenoStep2").html("Select Panel " + (parseInt(_0x6c34x25) + 1));
+                _0x6c34x45 = _0x6c34x45 + _0x495a[310] + $(_0x495a[236])[_0x495a[228]]() + _0x495a[308];
+                _0x6c34x45 = _0x6c34x45 + _0x495a[311] + _0x6c34x25 + _0x495a[312] + ($[_0x495a[314]](_0x6c34x47, function(_0x6c34x41) {
+                    return _0x6c34x41 == _0x495a[313] ? _0x495a[279] : _0x6c34x41;
+                })) + _0x495a[315] + _0x6c34x25 + _0x495a[316] + _0x6c34x4a + _0x495a[317];
+                _0x6c34x45 = _0x6c34x45 + _0x495a[318] + _0x6c34x25 + _0x495a[319] + $(_0x495a[256])[_0x495a[228]]() + _0x495a[295] + ($(_0x495a[256])[_0x495a[228]]() * 13) + _0x495a[308];
+                $("#amt_option").val(1);
+                $("#amt_option_caption").val(13);
             } else {
-                _0x6c34x45 = _0x6c34x45 + _0x495a[318] + _0x6c34x25 + _0x495a[321];
+                _0x6c34x45 = _0x6c34x45 + _0x495a[311] + _0x6c34x25 + _0x495a[312] + ($[_0x495a[314]](_0x6c34x47, function(_0x6c34x41) {
+                    return _0x6c34x41 == _0x495a[313] ? _0x495a[279] : _0x6c34x41;
+                })) + _0x495a[315] + _0x6c34x25 + _0x495a[316];
+                _0x6c34x45 = _0x6c34x45 + _0x6c34x47 + _0x495a[317];
+                if (_0x6c34x12 == 11) {
+                    _0x6c34x45 = _0x6c34x45 + _0x495a[318] + _0x6c34x25 + _0x495a[320];
+                } else {
+                    _0x6c34x45 = _0x6c34x45 + _0x495a[318] + _0x6c34x25 + _0x495a[321];
+                };
+                _0x6c34x45 = _0x6c34x45 + _0x495a[322];
             };
-            _0x6c34x45 = _0x6c34x45 + _0x495a[322];
-        };
-        _0x6c34x45 = _0x6c34x45 + _0x495a[323] + _0x6c34x25 + _0x495a[324] + _0x6c34x25 + _0x495a[325] + _0x6c34x25 + _0x495a[326];
-        _0x6c34x45 = _0x6c34x45 + _0x495a[327] + _0x6c34x25 + _0x495a[328] + _0x6c34x20[_0x495a[329]] + _0x495a[326];
-        _0x6c34x45 = _0x6c34x45 + _0x495a[330] + _0x6c34x25 + _0x495a[331] + _0x6c34x25 + _0x495a[332];
-        $(_0x495a[334])[_0x495a[333]](_0x6c34x45);
-        var _0x6c34x34 = Playwin[_0x495a[171]][_0x495a[233]]();
-        _0x6c34x25 = 1 + parseInt(_0x6c34x25);
-        $(_0x495a[289])[_0x495a[228]](_0x6c34x25);
-        $(_0x495a[282])[_0x495a[283]]();
-        $(_0x495a[284])[_0x495a[269]]();
-    },
-    checkAlertNoDraw_Draw_Amt_Spot: function() {
-        var _0x6c34x49 = false;
-        if ($(_0x495a[232])[_0x495a[228]]() == _0x495a[12] && $(_0x495a[230])[_0x495a[228]]() == _0x495a[12]) {
-            DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[335], _0x495a[56]);
-            _0x6c34x49 = true;
-        };
-        if (Playwin[_0x495a[171]][_0x495a[250]] == 9) {
-            if ($(_0x495a[236])[_0x495a[228]]() == _0x495a[12] || $(_0x495a[256])[_0x495a[228]]() == _0x495a[12]) {
-                DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[336], _0x495a[56]);
+            _0x6c34x45 = _0x6c34x45 + _0x495a[323] + _0x6c34x25 + _0x495a[324] + _0x6c34x25 + _0x495a[325] + _0x6c34x25 + _0x495a[326];
+            _0x6c34x45 = _0x6c34x45 + _0x495a[327] + _0x6c34x25 + _0x495a[328] + _0x6c34x20[_0x495a[329]] + _0x495a[326];
+            _0x6c34x45 = _0x6c34x45 + _0x495a[330] + _0x6c34x25 + _0x495a[331] + _0x6c34x25 + _0x495a[332];
+            $(_0x495a[334])[_0x495a[333]](_0x6c34x45);
+            var _0x6c34x34 = Playwin[_0x495a[171]][_0x495a[233]]();
+            _0x6c34x25 = 1 + parseInt(_0x6c34x25);
+            $(_0x495a[289])[_0x495a[228]](_0x6c34x25);
+            $(_0x495a[282])[_0x495a[283]]();
+            $(_0x495a[284])[_0x495a[269]]();
+        },
+        checkAlertNoDraw_Draw_Amt_Spot: function() {
+            var _0x6c34x49 = false;
+            if ($(_0x495a[232])[_0x495a[228]]() == _0x495a[12] && $(_0x495a[230])[_0x495a[228]]() == _0x495a[12]) {
+                DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[335], _0x495a[56]);
                 _0x6c34x49 = true;
             };
-        };
-        return _0x6c34x49;
-    },
-    setRowLP: function(_0x6c34x25, _0x6c34x4b) {
-        if (viewPlayGameModel[_0x495a[278]]()) {
-            return false;
-        };
-        var _0x6c34x4c = $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[297]) ? _0x495a[12] : $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[297])[_0x495a[296]]();
-        var _0x6c34x4d = _0x495a[338];
-        var _0x6c34x3a = false;
-        var _0x6c34x42 = _0x495a[12];
-        _0x6c34x42 = _0x495a[339] + _0x6c34x25;
-        if (_0x6c34x4b == _0x495a[279]) {
-            $(_0x6c34x42)[_0x495a[241]](_0x495a[240], true);
-            $(_0x495a[340])[_0x495a[228]](1);
-        } else {
-            $(_0x6c34x42)[_0x495a[241]](_0x495a[240], false);
-        };
-        _0x6c34x3a = $(_0x6c34x42)[_0x495a[241]](_0x495a[240]);
-        var _0x6c34x39 = [];
-        _0x6c34x39 = Playwin[_0x495a[171]][_0x495a[251]](Playwin[_0x495a[171]][_0x495a[250]], _0x6c34x3a, _0x6c34x4d);
-        $(_0x495a[337] + _0x6c34x25)[_0x495a[253]](_0x495a[254])[_0x495a[253]]($[_0x495a[52]]({
-            wheels: _0x6c34x39
-        }, Playwin[_0x495a[171]][_0x495a[252]]));
-        var _0x6c34x4e = [];
-        if (_0x6c34x4b == _0x495a[279]) {
-            var _0x6c34x4f = [];
-            $[_0x495a[152]](viewPlayGameModel[_0x495a[277]](), function(_0x6c34x1b, _0x6c34x1c) {
-                _0x6c34x4e[_0x495a[162]](0);
-                _0x6c34x4f[_0x495a[162]](_0x495a[279]);
-            });
-            viewPlayGameModel[_0x495a[277]](_0x6c34x4f);
-        }else if(_0x6c34x4b == '00'){
-          var _0x6c34x4f = [];
-          $[_0x495a[152]](viewPlayGameModel[_0x495a[277]](), function(_0x6c34x1b, _0x6c34x1c) {
-              _0x6c34x4e[_0x495a[162]](0);
-              _0x6c34x4f[_0x495a[162]]('00');
-          });
-          viewPlayGameModel[_0x495a[277]](_0x6c34x4f);
-        } else {
-            _0x6c34x4e = _0x6c34x4c;
-            $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[269]);
-            viewPlayGameModel[_0x495a[259]]();
-        };
-        $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[341], _0x6c34x4e, true, 1, false);
-        return false;
-    },
-    showScroller: function() {
-        $(_0x495a[337] + 1)[_0x495a[298]](_0x495a[269]);
-    },
-    play: function() {
-        Playwin[_0x495a[171]][_0x495a[342]](Playwin[_0x495a[171]][_0x495a[250]]);
-    },
-    isShowNoOfResultList: ko[_0x495a[9]](false),
-    selectedGameData: ko[_0x495a[9]]({}),
-    noOfResultList: ko[_0x495a[9]]([]),
-    showNoOfResultList: function(_0x6c34x11) {
-        var _0x6c34x29 = viewPlayGameModel[_0x495a[210]]() == _0x495a[118] ? [{
-            id: 5,
-            caption: _0x495a[201]
-        }, {
-            id: 10,
-            caption: _0x495a[202]
-        }, {
-            id: 20,
-            caption: _0x495a[203]
-        }, {
-            id: 50,
-            caption: _0x495a[204]
-        }, {
-            id: 100,
-            caption: _0x495a[343]
-        }] : [{
-            id: 5,
-            caption: _0x495a[201]
-        }, {
-            id: 10,
-            caption: _0x495a[202]
-        }, {
-            id: 20,
-            caption: _0x495a[203]
-        }, {
-            id: 50,
-            caption: _0x495a[204]
-        }, {
-            id: 100,
-            caption: _0x495a[343]
-        }];
-        var _0x6c34x11 = {};
-        _0x6c34x11[_0x495a[210]] = viewPlayGameModel[_0x495a[210]]();
-        _0x6c34x11[_0x495a[142]] = viewPlayGameModel[_0x495a[344]]();
-        _0x6c34x11[_0x495a[54]] = viewPlayGameModel[_0x495a[345]]();
-        viewPlayGameModel[_0x495a[207]](_0x6c34x11[_0x495a[54]]);
-        viewPlayGameModel[_0x495a[206]](_0x6c34x29);
-        viewPlayGameModel[_0x495a[208]](true);
-        viewPlayGameModel[_0x495a[209]](_0x6c34x11);
-    },
-    hideNoOfResultList: function(_0x6c34x11) {
-        viewPlayGameModel[_0x495a[208]](false);
-    },
-    showOverLayResults: function(_0x6c34x2f) {
-        var _0x6c34x11 = {
-            id: viewPlayGameModel[_0x495a[344]](),
-            name: viewPlayGameModel[_0x495a[345]]()
-        };
-        viewPlayGameModel[_0x495a[208]](false);
-        viewPlayGameModel[_0x495a[211]](_0x6c34x2f);
-        viewPlayGameModel[_0x495a[207]](_0x6c34x11[_0x495a[54]]);
-        viewPlayGameModel[_0x495a[213]](_0x6c34x11);
-        viewPlayGameModel[_0x495a[168]](_0x6c34x11);
-        viewPlayGameModel[_0x495a[169]](true);
-    },
-    setOverLayResults: function(_0x6c34x11) {
-        Playwin[_0x495a[171]][_0x495a[168]](_0x6c34x11, viewPlayGameModel);
-    },
-    showOverlayBalance: function() {
-        var _0x6c34x50 = $(_0x495a[346])[_0x495a[228]]();
-        var _0x6c34x51 = $(_0x495a[347])[_0x495a[228]]();
-        if (!_0x6c34x50 || $[_0x495a[145]](_0x6c34x50) == _0x495a[12]) {
-            DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[348], _0x495a[349]);
-            return false;
-        } else {
-            if (!_0x6c34x51 || $[_0x495a[145]](_0x6c34x51) == _0x495a[12]) {
-                DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[350], _0x495a[349]);
+            if (Playwin[_0x495a[171]][_0x495a[250]] == 9) {
+                if ($(_0x495a[236])[_0x495a[228]]() == _0x495a[12] || $(_0x495a[256])[_0x495a[228]]() == _0x495a[12]) {
+                    DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[336], _0x495a[56]);
+                    _0x6c34x49 = true;
+                };
+            };
+            return _0x6c34x49;
+        },
+        setRowLP: function(_0x6c34x25, _0x6c34x4b) {
+            if (viewPlayGameModel[_0x495a[278]]()) {
                 return false;
             };
-        };
-        viewPlayGameModel[_0x495a[183]](_0x495a[11]);
-        viewPlayGameModel[_0x495a[62]](true);
-        $[_0x495a[98]]({
-            url: Playwin[_0x495a[97]][_0x495a[96]][_0x495a[352]],
-            method: _0x495a[94],
-            data: _0x495a[353] + $[_0x495a[145]](_0x6c34x50) + _0x495a[354] + $[_0x495a[145]](_0x6c34x51),
-            success: function(_0x6c34x52) {
-                var _0x6c34x53 = $[_0x495a[76]](_0x6c34x52);
+            var _0x6c34x4c = $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[297]) ? _0x495a[12] : $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[297])[_0x495a[296]]();
+            var _0x6c34x4d = _0x495a[338];
+            var _0x6c34x3a = false;
+            var _0x6c34x42 = _0x495a[12];
+            _0x6c34x42 = _0x495a[339] + _0x6c34x25;
+            if (_0x6c34x4b == _0x495a[279]) {
+                $(_0x6c34x42)[_0x495a[241]](_0x495a[240], true);
+                $(_0x495a[340])[_0x495a[228]](1);
+            } else {
+                $(_0x6c34x42)[_0x495a[241]](_0x495a[240], false);
+            };
+            _0x6c34x3a = $(_0x6c34x42)[_0x495a[241]](_0x495a[240]);
+            var _0x6c34x39 = [];
+            _0x6c34x39 = Playwin[_0x495a[171]][_0x495a[251]](Playwin[_0x495a[171]][_0x495a[250]], _0x6c34x3a, _0x6c34x4d);
+            $(_0x495a[337] + _0x6c34x25)[_0x495a[253]](_0x495a[254])[_0x495a[253]]($[_0x495a[52]]({
+                wheels: _0x6c34x39
+            }, Playwin[_0x495a[171]][_0x495a[252]]));
+            var _0x6c34x4e = [];
+            if (_0x6c34x4b == _0x495a[279]) {
+                var _0x6c34x4f = [];
+                $[_0x495a[152]](viewPlayGameModel[_0x495a[277]](), function(_0x6c34x1b, _0x6c34x1c) {
+                    _0x6c34x4e[_0x495a[162]](0);
+                    _0x6c34x4f[_0x495a[162]](_0x495a[279]);
+                });
+                viewPlayGameModel[_0x495a[277]](_0x6c34x4f);
+            } else if (_0x6c34x4b == '00') {
+                var _0x6c34x4f = [];
+                $[_0x495a[152]](viewPlayGameModel[_0x495a[277]](), function(_0x6c34x1b, _0x6c34x1c) {
+                    _0x6c34x4e[_0x495a[162]](0);
+                    _0x6c34x4f[_0x495a[162]]('00');
+                });
+                viewPlayGameModel[_0x495a[277]](_0x6c34x4f);
+            } else {
+                _0x6c34x4e = _0x6c34x4c;
+                $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[269]);
+                viewPlayGameModel[_0x495a[259]]();
+            };
+            $(_0x495a[337] + _0x6c34x25)[_0x495a[298]](_0x495a[341], _0x6c34x4e, true, 1, false);
+            return false;
+        },
+        showScroller: function() {
+            $(_0x495a[337] + 1)[_0x495a[298]](_0x495a[269]);
+        },
+        play: function() {
+            Playwin[_0x495a[171]][_0x495a[342]](Playwin[_0x495a[171]][_0x495a[250]]);
+        },
+        isShowNoOfResultList: ko[_0x495a[9]](false),
+        selectedGameData: ko[_0x495a[9]]({}),
+        noOfResultList: ko[_0x495a[9]]([]),
+        showNoOfResultList: function(_0x6c34x11) {
+            var _0x6c34x29 = viewPlayGameModel[_0x495a[210]]() == _0x495a[118] ? [{
+                id: 5,
+                caption: _0x495a[201]
+            }, {
+                id: 10,
+                caption: _0x495a[202]
+            }, {
+                id: 20,
+                caption: _0x495a[203]
+            }, {
+                id: 50,
+                caption: _0x495a[204]
+            }, {
+                id: 100,
+                caption: _0x495a[343]
+            }] : [{
+                id: 5,
+                caption: _0x495a[201]
+            }, {
+                id: 10,
+                caption: _0x495a[202]
+            }, {
+                id: 20,
+                caption: _0x495a[203]
+            }, {
+                id: 50,
+                caption: _0x495a[204]
+            }, {
+                id: 100,
+                caption: _0x495a[343]
+            }];
+            var _0x6c34x11 = {};
+            _0x6c34x11[_0x495a[210]] = viewPlayGameModel[_0x495a[210]]();
+            _0x6c34x11[_0x495a[142]] = viewPlayGameModel[_0x495a[344]]();
+            _0x6c34x11[_0x495a[54]] = viewPlayGameModel[_0x495a[345]]();
+            viewPlayGameModel[_0x495a[207]](_0x6c34x11[_0x495a[54]]);
+            viewPlayGameModel[_0x495a[206]](_0x6c34x29);
+            viewPlayGameModel[_0x495a[208]](true);
+            viewPlayGameModel[_0x495a[209]](_0x6c34x11);
+        },
+        hideNoOfResultList: function(_0x6c34x11) {
+            viewPlayGameModel[_0x495a[208]](false);
+        },
+        showOverLayResults: function(_0x6c34x2f) {
+            var _0x6c34x11 = {
+                id: viewPlayGameModel[_0x495a[344]](),
+                name: viewPlayGameModel[_0x495a[345]]()
+            };
+            viewPlayGameModel[_0x495a[208]](false);
+            viewPlayGameModel[_0x495a[211]](_0x6c34x2f);
+            viewPlayGameModel[_0x495a[207]](_0x6c34x11[_0x495a[54]]);
+            viewPlayGameModel[_0x495a[213]](_0x6c34x11);
+            viewPlayGameModel[_0x495a[168]](_0x6c34x11);
+            viewPlayGameModel[_0x495a[169]](true);
+        },
+        setOverLayResults: function(_0x6c34x11) {
+            Playwin[_0x495a[171]][_0x495a[168]](_0x6c34x11, viewPlayGameModel);
+        },
+        showOverlayBalance: function() {
+            var _0x6c34x50 = $(_0x495a[346])[_0x495a[228]]();
+            var _0x6c34x51 = $(_0x495a[347])[_0x495a[228]]();
+            if (!_0x6c34x50 || $[_0x495a[145]](_0x6c34x50) == _0x495a[12]) {
+                DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[348], _0x495a[349]);
+                return false;
+            } else {
+                if (!_0x6c34x51 || $[_0x495a[145]](_0x6c34x51) == _0x495a[12]) {
+                    DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[350], _0x495a[349]);
+                    return false;
+                };
+            };
+            viewPlayGameModel[_0x495a[183]](_0x495a[11]);
+            viewPlayGameModel[_0x495a[62]](true);
+            $[_0x495a[98]]({
+                url: Playwin[_0x495a[97]][_0x495a[96]][_0x495a[352]],
+                method: _0x495a[94],
+                data: _0x495a[353] + $[_0x495a[145]](_0x6c34x50) + _0x495a[354] + $[_0x495a[145]](_0x6c34x51),
+                success: function(_0x6c34x52) {
+                    var _0x6c34x53 = $[_0x495a[76]](_0x6c34x52);
+                    viewPlayGameModel[_0x495a[62]](false);
+                    viewPlayGameModel[_0x495a[183]](_0x495a[154]);
+                    if (_0x6c34x53[_0x495a[349]] || (_0x6c34x53[_0x495a[355]] && (_0x6c34x53[_0x495a[355]] == -1 || _0x6c34x53[_0x495a[355]] == 99))) {
+                        DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x6c34x53.Error, _0x495a[356]);
+                    } else {
+                        if (!_0x6c34x53[_0x495a[357]]) {
+                            DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[358], _0x495a[359]);
+                        } else {
+                            viewPlayGameModel[_0x495a[360]](_0x6c34x53);
+                            viewPlayGameModel[_0x495a[263]](true);
+                        };
+                    };
+                }
+            })[_0x495a[75]](function() {
                 viewPlayGameModel[_0x495a[62]](false);
                 viewPlayGameModel[_0x495a[183]](_0x495a[154]);
-                if (_0x6c34x53[_0x495a[349]] || (_0x6c34x53[_0x495a[355]] && (_0x6c34x53[_0x495a[355]] == -1 || _0x6c34x53[_0x495a[355]] == 99))) {
-                    DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x6c34x53.Error, _0x495a[356]);
-                } else {
-                    if (!_0x6c34x53[_0x495a[357]]) {
-                        DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[358], _0x495a[359]);
-                    } else {
-                        viewPlayGameModel[_0x495a[360]](_0x6c34x53);
-                        viewPlayGameModel[_0x495a[263]](true);
-                    };
-                };
+                DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[351], _0x495a[56]);
+            });
+        },
+        tbItems: ko[_0x495a[9]]([{
+            align: _0x495a[1],
+            widget: _0x495a[127],
+            options: {
+                icon: _0x495a[173],
+                clickAction: _0x495a[361]
             }
-        })[_0x495a[75]](function() {
-            viewPlayGameModel[_0x495a[62]](false);
-            viewPlayGameModel[_0x495a[183]](_0x495a[154]);
-            DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[351], _0x495a[56]);
+        }, {
+            text: _0x495a[216],
+            align: _0x495a[1]
+        }, {
+            align: _0x495a[126],
+            widget: _0x495a[127],
+            options: {
+                icon: _0x495a[362],
+                clickAction: this[_0x495a[363]]
+            }
+        }, {
+            align: _0x495a[126],
+            widget: _0x495a[127],
+            options: {
+                icon: _0x495a[130],
+                clickAction: _0x495a[131]
+            }
+        }])
+    };
+    viewPlayGameModel[_0x495a[183]](_0x495a[11]);
+    viewPlayGameModel[_0x495a[62]](true);
+    $[_0x495a[387]](Playwin[_0x495a[97]][_0x495a[96]][_0x495a[248]])[_0x495a[93]](function(_0x6c34x52) {
+        viewPlayGameModel[_0x495a[62]](false);
+        var _0x6c34x53 = $[_0x495a[76]](_0x6c34x52);
+        $[_0x495a[152]](Playwin[_0x495a[97]][_0x495a[143]], function(_0x6c34x1b, _0x6c34x21) {
+            var _0x6c34x54;
+            _0x6c34x54 = _0x495a[174] + _0x6c34x21[_0x495a[142]];
+            var _0x6c34x12;
+            _0x6c34x12 = _0x495a[174] + _0x6c34x21[_0x495a[142]] + _0x495a[365];
+            if (eval(_0x6c34x54) && eval(_0x6c34x12)) {
+                eval(_0x6c34x12)[_0x495a[366]](0, eval(_0x6c34x12)[_0x495a[42]]);
+            };
         });
-    },
-    tbItems: ko[_0x495a[9]]([{
-        align: _0x495a[1],
-        widget: _0x495a[127],
-        options: {
-            icon: _0x495a[173],
-            clickAction: _0x495a[361]
-        }
-    }, {
-        text: _0x495a[216],
-        align: _0x495a[1]
-    }, {
-        align: _0x495a[126],
-        widget: _0x495a[127],
-        options: {
-            icon: _0x495a[362],
-            clickAction: this[_0x495a[363]]
-        }
-    }, {
-        align: _0x495a[126],
-        widget: _0x495a[127],
-        options: {
-            icon: _0x495a[130],
-            clickAction: _0x495a[131]
-        }
-    }])
-};
-viewPlayGameModel[_0x495a[183]](_0x495a[11]);
-viewPlayGameModel[_0x495a[62]](true);
-$[_0x495a[387]](Playwin[_0x495a[97]][_0x495a[96]][_0x495a[248]])[_0x495a[93]](function(_0x6c34x52) {
-    viewPlayGameModel[_0x495a[62]](false);
-    var _0x6c34x53 = $[_0x495a[76]](_0x6c34x52);
-    $[_0x495a[152]](Playwin[_0x495a[97]][_0x495a[143]], function(_0x6c34x1b, _0x6c34x21) {
-        var _0x6c34x54;
-        _0x6c34x54 = _0x495a[174] + _0x6c34x21[_0x495a[142]];
-        var _0x6c34x12;
-        _0x6c34x12 = _0x495a[174] + _0x6c34x21[_0x495a[142]] + _0x495a[365];
-        if (eval(_0x6c34x54) && eval(_0x6c34x12)) {
-            eval(_0x6c34x12)[_0x495a[366]](0, eval(_0x6c34x12)[_0x495a[42]]);
-        };
-    });
-    $[_0x495a[152]](_0x6c34x53.Draw, function(_0x6c34x1b, _0x6c34x21) {
-        var _0x6c34x54;
-        _0x6c34x54 = _0x495a[174] + _0x6c34x21[_0x495a[367]];
-        var _0x6c34x12;
-        _0x6c34x12 = _0x495a[174] + _0x6c34x21[_0x495a[367]] + _0x495a[365];
-        if (eval(_0x6c34x54) && eval(_0x6c34x12)) {
-            var _0x6c34x35 = {};
-            eval(_0x6c34x12)[_0x495a[162]](_0x6c34x21);
-        };
-    });
-    var _0x6c34x3e = eval(_0x495a[174] + _0x6c34xd[_0x495a[142]]);
-    viewPlayGameModel[_0x495a[368]](_0x6c34x3e[_0x495a[220]][0].DrawID);
-    viewPlayGameModel[_0x495a[372]](_0x6c34x3e[_0x495a[54]] + _0x495a[369] + _0x6c34x3e[_0x495a[370]] + _0x495a[371]);
-    viewPlayGameModel[_0x495a[373]](_0x6c34x3e[_0x495a[54]]);
-    viewPlayGameModel[_0x495a[345]](_0x6c34x3e[_0x495a[54]]);
-    viewPlayGameModel[_0x495a[210]](_0x6c34x3e[_0x495a[109]]);
-    viewPlayGameModel[_0x495a[211]](_0x6c34x3e[_0x495a[109]] == _0x495a[118] ? 5 : 3);
-    viewPlayGameModel[_0x495a[344]](_0x6c34x3e[_0x495a[142]]);
-    viewPlayGameModel[_0x495a[158]](_0x6c34x3e[_0x495a[54]]);
-    viewPlayGameModel[_0x495a[376]]([{
-        align: _0x495a[1],
-        widget: _0x495a[127],
-        options: {
-            icon: _0x495a[173],
-            clickAction: _0x495a[361]
-        }
-    }, {
-        text: _0x495a[374] + _0x6c34x3e[_0x495a[54]],
-        align: _0x495a[1]
-    }, {
-        align: _0x495a[126],
-        widget: _0x495a[127],
-        options: {
-            icon: _0x495a[362],
-            clickAction: viewPlayGameModel[_0x495a[375]]
-        }
-    }, {
-        align: _0x495a[126],
-        widget: _0x495a[127],
-        options: {
-            icon: _0x495a[130],
-            clickAction: _0x495a[131]
-        }
-    }]);
-    viewPlayGameModel[_0x495a[378]](Playwin[_0x495a[89]][_0x495a[177]](_0x6c34x3e[_0x495a[220]][0].DrawTime, _0x495a[377]));
-    var _0x6c34x55 = [];
-    $[_0x495a[152]](_0x6c34x3e[_0x495a[220]], function(_0x6c34x1b, _0x6c34x1c) {
-        _0x6c34x1c[_0x495a[379]] = _0x6c34x1b + 1;
-        _0x6c34x55[_0x495a[162]](_0x6c34x1c);
-    });
-    viewPlayGameModel[_0x495a[286]](_0x6c34x55);
-    viewPlayGameModel[_0x495a[285]]([]);
-    $[_0x495a[152]](viewPlayGameModel[_0x495a[286]](), function(_0x6c34x1b, _0x6c34x1c) {
-        viewPlayGameModel[_0x495a[285]][_0x495a[162]]({
-            key: _0x6c34x1b + 1,
-            value: _0x6c34x1b + 1
+        $[_0x495a[152]](_0x6c34x53.Draw, function(_0x6c34x1b, _0x6c34x21) {
+            var _0x6c34x54;
+            _0x6c34x54 = _0x495a[174] + _0x6c34x21[_0x495a[367]];
+            var _0x6c34x12;
+            _0x6c34x12 = _0x495a[174] + _0x6c34x21[_0x495a[367]] + _0x495a[365];
+            if (eval(_0x6c34x54) && eval(_0x6c34x12)) {
+                var _0x6c34x35 = {};
+                eval(_0x6c34x12)[_0x495a[162]](_0x6c34x21);
+            };
         });
-    });
-    var _0x6c34x39 = [
-    [{
-        label: _0x495a[12],
-        keys: [],
-        values: []
-    }]
-    ];
-    $[_0x495a[152]](_0x6c34x3e[_0x495a[220]], function(_0x6c34x1b, _0x6c34x1c) {
-        _0x6c34x39[0][0][_0x495a[380]][_0x495a[162]](_0x6c34x1c.DrawID);
-        _0x6c34x39[0][0][_0x495a[381]][_0x495a[162]](_0x6c34x1c.DrawTime);
-    });
-    var _0x6c34x4e = [];
-    $[_0x495a[152]](_0x6c34x3e[_0x495a[246]], function(_0x6c34x1b, _0x6c34x40) {
-        $[_0x495a[152]](_0x6c34x40[_0x495a[244]], function(_0x6c34x41, _0x6c34x1c) {
-            _0x6c34x4e[_0x495a[162]](_0x495a[276]);
+        var _0x6c34x3e = eval(_0x495a[174] + _0x6c34xd[_0x495a[142]]);
+        viewPlayGameModel[_0x495a[368]](_0x6c34x3e[_0x495a[220]][0].DrawID);
+        viewPlayGameModel[_0x495a[372]](_0x6c34x3e[_0x495a[54]] + _0x495a[369] + _0x6c34x3e[_0x495a[370]] + _0x495a[371]);
+        viewPlayGameModel[_0x495a[373]](_0x6c34x3e[_0x495a[54]]);
+        viewPlayGameModel[_0x495a[345]](_0x6c34x3e[_0x495a[54]]);
+        viewPlayGameModel[_0x495a[210]](_0x6c34x3e[_0x495a[109]]);
+        viewPlayGameModel[_0x495a[211]](_0x6c34x3e[_0x495a[109]] == _0x495a[118] ? 5 : 3);
+        viewPlayGameModel[_0x495a[344]](_0x6c34x3e[_0x495a[142]]);
+        viewPlayGameModel[_0x495a[158]](_0x6c34x3e[_0x495a[54]]);
+        viewPlayGameModel[_0x495a[376]]([{
+            align: _0x495a[1],
+            widget: _0x495a[127],
+            options: {
+                icon: _0x495a[173],
+                clickAction: _0x495a[361]
+            }
+        }, {
+            text: _0x495a[374] + _0x6c34x3e[_0x495a[54]],
+            align: _0x495a[1]
+        }, {
+            align: _0x495a[126],
+            widget: _0x495a[127],
+            options: {
+                icon: _0x495a[362],
+                clickAction: viewPlayGameModel[_0x495a[375]]
+            }
+        }, {
+            align: _0x495a[126],
+            widget: _0x495a[127],
+            options: {
+                icon: _0x495a[130],
+                clickAction: _0x495a[131]
+            }
+        }]);
+        viewPlayGameModel[_0x495a[378]](Playwin[_0x495a[89]][_0x495a[177]](_0x6c34x3e[_0x495a[220]][0].DrawTime, _0x495a[377]));
+        var _0x6c34x55 = [];
+        $[_0x495a[152]](_0x6c34x3e[_0x495a[220]], function(_0x6c34x1b, _0x6c34x1c) {
+            _0x6c34x1c[_0x495a[379]] = _0x6c34x1b + 1;
+            _0x6c34x55[_0x495a[162]](_0x6c34x1c);
         });
+        viewPlayGameModel[_0x495a[286]](_0x6c34x55);
+        viewPlayGameModel[_0x495a[285]]([]);
+        $[_0x495a[152]](viewPlayGameModel[_0x495a[286]](), function(_0x6c34x1b, _0x6c34x1c) {
+            viewPlayGameModel[_0x495a[285]][_0x495a[162]]({
+                key: _0x6c34x1b + 1,
+                value: _0x6c34x1b + 1
+            });
+        });
+        var _0x6c34x39 = [
+            [{
+                label: _0x495a[12],
+                keys: [],
+                values: []
+            }]
+        ];
+        $[_0x495a[152]](_0x6c34x3e[_0x495a[220]], function(_0x6c34x1b, _0x6c34x1c) {
+            _0x6c34x39[0][0][_0x495a[380]][_0x495a[162]](_0x6c34x1c.DrawID);
+            _0x6c34x39[0][0][_0x495a[381]][_0x495a[162]](_0x6c34x1c.DrawTime);
+        });
+        var _0x6c34x4e = [];
+        $[_0x495a[152]](_0x6c34x3e[_0x495a[246]], function(_0x6c34x1b, _0x6c34x40) {
+            $[_0x495a[152]](_0x6c34x40[_0x495a[244]], function(_0x6c34x41, _0x6c34x1c) {
+                _0x6c34x4e[_0x495a[162]](_0x495a[276]);
+            });
+        });
+        viewPlayGameModel[_0x495a[277]](_0x6c34x4e);
+        Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[142]] = Playwin[_0x495a[171]][_0x495a[250]];
+        Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[54]] = _0x6c34x3e[_0x495a[54]];
+        Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[370]] = _0x6c34x3e[_0x495a[370]];
+        Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[384]] = _0x6c34x3e[_0x495a[54]] + _0x495a[369] + _0x6c34x3e[_0x495a[370]] + _0x495a[371];
+        Playwin[_0x495a[171]][_0x495a[383]][_0x495a[385]] = Playwin[_0x495a[89]][_0x495a[177]](_0x6c34x3e[_0x495a[220]][0].DrawTime, _0x495a[377]);
+        Playwin[_0x495a[171]][_0x495a[386]](_0x6c34xd[_0x495a[142]]);
+    })[_0x495a[75]](function() {
+        viewPlayGameModel[_0x495a[62]](false);
+        DevExpress.ui.dialog.alert("Please check your Internet connection.", "Error!");
+        // DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[364], _0x495a[56]);
     });
-    viewPlayGameModel[_0x495a[277]](_0x6c34x4e);
-    Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[142]] = Playwin[_0x495a[171]][_0x495a[250]];
-    Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[54]] = _0x6c34x3e[_0x495a[54]];
-    Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[370]] = _0x6c34x3e[_0x495a[370]];
-    Playwin[_0x495a[171]][_0x495a[383]][_0x495a[382]][_0x495a[384]] = _0x6c34x3e[_0x495a[54]] + _0x495a[369] + _0x6c34x3e[_0x495a[370]] + _0x495a[371];
-    Playwin[_0x495a[171]][_0x495a[383]][_0x495a[385]] = Playwin[_0x495a[89]][_0x495a[177]](_0x6c34x3e[_0x495a[220]][0].DrawTime, _0x495a[377]);
-    Playwin[_0x495a[171]][_0x495a[386]](_0x6c34xd[_0x495a[142]]);
-})[_0x495a[75]](function() {
-    viewPlayGameModel[_0x495a[62]](false);
-    DevExpress.ui.dialog.alert("Please check your Internet connection.","Error!");
-    // DevExpress[_0x495a[59]][_0x495a[58]][_0x495a[57]](_0x495a[364], _0x495a[56]);
-});
-$(_0x495a[390])[_0x495a[389]](function() {
-    this[_0x495a[388]]();
-    return false;
-});
-return viewPlayGameModel;
+    $(_0x495a[390])[_0x495a[389]](function() {
+        this[_0x495a[388]]();
+        return false;
+    });
+    return viewPlayGameModel;
 };
 AppNamespace[_0x495a[391]] = function(_0x6c34x2) {
     viewPlayGameModel = null;
@@ -1406,14 +1402,14 @@ AppNamespace[_0x495a[391]] = function(_0x6c34x2) {
             }
         }],
         playGameBtn: function() {
-          if(navigator.connection.type==0){
-            DevExpress.ui.dialog.alert("No Internet connection.","Error!");
-          }else if(navigator.connection.type=='none'){
-            DevExpress.ui.dialog.alert('No Internet connection.',"Error!");
-          }else{
-            AppNamespace[_0x495a[20]][_0x495a[396]]();
-            AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[163] + this[_0x495a[344]]);
-          }
+            if (navigator.connection.type == 0) {
+                DevExpress.ui.dialog.alert("No Internet connection.", "Error!");
+            } else if (navigator.connection.type == 'none') {
+                DevExpress.ui.dialog.alert('No Internet connection.', "Error!");
+            } else {
+                AppNamespace[_0x495a[20]][_0x495a[396]]();
+                AppNamespace[_0x495a[20]][_0x495a[19]](_0x495a[163] + this[_0x495a[344]]);
+            }
         },
         openBannerRUrl: function(_0x6c34x3, _0x6c34x4) {
             window[_0x495a[16]](_0x6c34x3, _0x495a[15]);
@@ -1442,31 +1438,31 @@ AppNamespace[_0x495a[398]] = function() {
         items: [{
             key: _0x495a[12],
             items: [{
-                name: _0x495a[399],
-                url: _0x495a[401]
-            }, {
-                name: _0x495a[402],
-                url: _0x495a[403]
-            }, {
-                name: "Tell a Friend",
-                url: "tellAFriend"
-            },
-            {
-                name: "Terms & Conditions",
-                url: "terms"
-            },{
-                name: "Disclaimer",
-                url: "disclaimer"
-            }
-          ]
+                    name: _0x495a[399],
+                    url: _0x495a[401]
+                }, {
+                    name: _0x495a[402],
+                    url: _0x495a[403]
+                }, {
+                    name: "Tell a Friend",
+                    url: "tellAFriend"
+                },
+                {
+                    name: "Terms & Conditions",
+                    url: "terms"
+                }, {
+                    name: "Disclaimer",
+                    url: "disclaimer"
+                }
+            ]
         }],
         callAction: function(_0x6c34x3) {
-          // alert("call action "+_0x6c34x3.name);
-          if(_0x6c34x3.name == "Tell a Friend"){
-            window.location.href="sms: ?body='Check out the PLAYWIN App for Android, Iphone and Windows Phone. Download it today from www.myplaywin.com/app. Khelo India Khelo'";
-          }else{
-            AppNamespace[_0x495a[20]][_0x495a[19]](_0x6c34x3[_0x495a[406]]);
-          }
+            // alert("call action "+_0x6c34x3.name);
+            if (_0x6c34x3.name == "Tell a Friend") {
+                window.location.href = "sms: ?body='Check out the PLAYWIN App for Android, Iphone and Windows Phone. Download it today from www.myplaywin.com/app. Khelo India Khelo'";
+            } else {
+                AppNamespace[_0x495a[20]][_0x495a[19]](_0x6c34x3[_0x495a[406]]);
+            }
         }
     };
     return _0x6c34x4;
