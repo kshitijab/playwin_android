@@ -149,7 +149,7 @@ AppNamespace.settings=function(){
                     subject: 'App Query',
                     body:    null
                 });
-            }
+            } 
            
             }else{
                 AppNamespace.app.navigate(a.url);
